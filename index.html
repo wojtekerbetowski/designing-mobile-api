@@ -1,306 +1,334 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+<head>
+    <meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+    <title>Designing API for Mobile apps</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+    <meta name="description" content="Presentation about designing API for mobile applications.">
+    <meta name="author" content="Wojtek Erbetowski, Maciek Opała">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/default.css" id="theme">
 
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
-		<script>
-			if( window.location.search.match( /print-pdf/gi ) ) {
-				var link = document.createElement( 'link' );
-				link.rel = 'stylesheet';
-				link.type = 'text/css';
-				link.href = 'css/print/pdf.css';
-				document.getElementsByTagName( 'head' )[0].appendChild( link );
-			}
-		</script>
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+        if (window.location.search.match(/print-pdf/gi)) {
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = 'css/print/pdf.css';
+            document.getElementsByTagName('head')[0].appendChild(link);
+        }
+    </script>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
 
-	<body>
+<body>
 
-		<div class="reveal">
+<div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-    <section data-id="4b8a803d39a86be13c0910f756101a0a">
-        <section data-id="f6b54b414500e6faec4d952bae9c95a7">
-            <h1>Designing api for mobile apps</h1>
-            <div>Maciek Opała</div>
-            <div>Wojtek Erbetowski</div>
-            <div>
-                <br>
-            </div>
-        </section>
-        <section data-id="72d9dd437d7e78d6a38a3654be2b5458">
-            <h2>agenda</h2>
-            <div>
-                <br>
-            </div>
-            <div>
-                <br>
-            </div>
-        </section>
-        <section data-id="a31d1bd315ae1b1945976f1341c17fef">
-            <h2>motivation</h2>
-        </section>
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+<section>
+    <section>
+        <h1>Designing api for mobile apps</h1>
+
+        <div>Maciek Opała</div>
+        <div>Wojtek Erbetowski</div>
+        <div>
+            <br>
+        </div>
     </section>
-    <section data-id="73ec8b586df253d14abe4304d47b1991">
-        <section data-id="5ad17d08549caf81fa08c699e5198803">
-            <h2>about us</h2>
-            <div>
-                <br>
-            </div>
-        </section>
-        <section data-id="3fad81f43d57405c4f483f1285439634">
-            <h2>teammates @ polidea</h2>
-        </section>
-        <section data-id="d3f942626c07bb1cd9b1eba666984b06">
-            <h2>experience</h2>
-        </section>
+    <section>
+        <h2>agenda</h2>
+
+        <div>
+            <br>
+        </div>
+        <div>
+            <br>
+        </div>
     </section>
-    <section data-id="d9d2ee985f3508fef38f44c8180b3f66">
-        <section data-id="27c406703c38a3ff189e0908dacb257e">
-            <h2>A word about rest</h2>
-            <div>
-                <br>
-            </div>
-        </section>
-        <section data-id="d2ca141e78336e5c8fb3849977d9e8c7">
-            <h2>back to the roots</h2>
-        </section>
-        <section data-id="dad4fbd703b109ca393c9be990f941c3">
-            <h2>the "re" in rest</h2>
-            <div>A few words about representation (XML, JSON), not action</div>
-        </section>
-        <section data-id="765e0f91708e444b9b19abf08add7c6b">
-            <h2>updating resources</h2>
-            <div>PUT, POST, PATCH</div>
-            <div>
-                <br>
-            </div>
-        </section>
+    <section>
+        <h2>motivation</h2>
     </section>
-    <section data-id="20e17838f00e61727e3df437fa23f78d">
-        <section data-id="1fef7eef3fd2d7aec0f7b0e6626642f6">
-            <h2>why isn't it perfect for mobile</h2>
-        </section>
-        <section data-id="380fa013624ef3c8bfc1f30fce85c777">
-            <h2>throughput and latency</h2>
-        </section>
-        <section data-id="cf7d512ed9a22be27ba9c212b1919bb2">
-            <h2>updating app takes long</h2>
-        </section>
-        <section data-id="475546948b6794119b60b15a77bd1cf5">
-            <h2>lang and tools more limited</h2>
-        </section>
+</section>
+<section>
+    <section>
+        <h2>about us</h2>
+
+        <div>
+            <br>
+        </div>
     </section>
-    <section data-id="54144d1b6e0004ab627f475a27e981aa">
-        <section data-id="3d6b2efb4d505e29734a5e8c82634c76">
-            <h2>Patterns (lessons learnt)</h2>
-        </section>
-        <section data-id="f99290fa70f47edf9491dfbcd03c1efe">
-            <h2>what apps do we discuss?</h2>
-            <div>
-                <br>
-            </div>
-            <div>Homegrown!</div>
-            <div>Public mobile APIs(?)</div>
-        </section>
+    <section>
+        <h2>teammates @ polidea</h2>
     </section>
-    <section data-id="34522427eb39ddf88222be93b0f0c0cb">
-        <section data-id="551b37fdac9378b0502d2143612d4153">
-            <h2>http methods</h2>
-            <div>How do you update a small information?</div>
-            <div>POST with the whole object</div>
-            <div>PATCH coming right up</div>
-            <div>
-                <br>
-            </div>
-        </section>
-        <section data-id="ef17d139159dcfe71f12c15130a1dd7e">
-            <h2>using actions in paths</h2>
-            <div>
-                <br>
-            </div>
-            <div>POST /user/activate</div>
-            <div>
-                <br>
-            </div>
-            <div>
-                <br>
-            </div>
-            <div>
-                <br>
-            </div>
-        </section>
-        <section data-id="46d7dfa5b8d4160ec874ba836b74fc55">
-            <h2>thinner &nbsp;client, more control</h2>
-            <div>
-                <br>
-            </div>
-        </section>
+    <section>
+        <h2>experience</h2>
     </section>
-    <section data-id="6c9f1233b8a6ddc1e8574df3665f03bf">
-        <section data-id="d1211cb7e9cf4b15a61e57e48370ea40">
-            <h2>hateoas</h2>
-            <div>... and linking between resources</div>
-            <div>
-                <br>
-            </div>
-        </section>
-        <section data-id="5f5145fcf0c8f4d1c5093aa7e1ed88cf">
-            <h2>multiple calls from mobile</h2>
-            <div>
-                <br>
-            </div>
-            <div>
-                <br>
-            </div>
-        </section>
-        <section data-id="d692b475a4f196123114aa76df83f16a">
-            <h2>embedding subresources</h2>
-            <div>
-                <br>
-            </div>
-        </section>
-        <section data-id="303d439c53f4271696f67331d8485df9">
-            <h2>Paging</h2>
-        </section>
+</section>
+<section>
+    <section>
+        <h2>A word about rest</h2>
+
+        <div>
+            <br>
+        </div>
     </section>
-    <section data-id="27cc1fb072f62ec13ae0c747abbb413b">
-        <section data-id="5e0bebf8b1d85ccb459ba0c44e9b9296">
-            <h2>http cache</h2>
-            <div>
-                <br>
-            </div>
-        </section>
-        <section data-id="03298fb6385eae15565e31bfc9ebde80">
-            <h2>compatibility across clients</h2>
-        </section>
+    <section>
+        <h2>back to the roots</h2>
     </section>
-    <section data-id="477d94eddebe542a7cab6b68c93f5bb9">
-        <section data-id="a2070f0d2f94cb459a95ec6c255fd32d">
-            <h2>minimizing data size</h2>
-        </section>
-        <section data-id="a1b4ed8a7129140776cf1f1bdce0e3a8">
-            <h2>compression</h2>
-        </section>
-        <section data-id="bc0029b433a5c7dd9387202aacf7b0c1">
-            <h2>fields subsets</h2>
-        </section>
+    <section>
+        <h2>the "re" in rest</h2>
+
+        <div>A few words about representation (XML, JSON), not action</div>
     </section>
-    <section data-id="f2b1027eea4bb9e4892e2476b4ae3dd4">
-        <section data-id="9a33ee9f53104402cb0e7f76a4428c13">
-            <h2>versioning</h2>
-            <div>
-                <br>
-            </div>
-        </section>
-        <section data-id="301431c0b1dd229a4d08c47821fd2208">
-            <h2>3 schools of versioning</h2>
-        </section>
-        <section data-id="be75ecf8c645b377b4e02330efdeb484">
-            <h2>path parameter</h2>
-        </section>
-        <section data-id="dbadbf139d1c8e51514ee715a105e08d">
-            <h2>media type</h2>
-        </section>
-        <section data-id="bb4b1417a7c94d1fa6df4cfd63f20c3e">
-            <h2>subdomain</h2>
-        </section>
+    <section>
+        <h2>updating resources</h2>
+
+        <div>PUT, POST, PATCH</div>
+        <div>
+            <br>
+        </div>
     </section>
-    <section data-id="934508b60a80cff4c926c4c61397a916">
-        <section data-id="db01c0725af3129847dc0bfbea44e091">
-            <h2>documenting services</h2>
-            <div>and swagger</div>
-            <div>
-                <br>
-            </div>
-        </section>
-        <section data-id="b179868d2684d783563c44b95e97ff03">
-            <h2>json schema</h2>
-        </section>
+</section>
+<section>
+    <section>
+        <h2>why isn't it perfect for mobile</h2>
     </section>
-    <section data-id="33962a635138a3688e3b57cfdaadc2b6">
-        <section data-id="c93a15a52080e2dc8e3cceb0e24b9f26">
-            <h2>case study - utest app</h2>
-        </section>
-        <section data-id="1b0c92c051ec14a82a3af63415b4eec8">
-            <h2>building middleware</h2>
-        </section>
-        <section data-id="fd368d5b65969f339ef6001df32f559d">
-            <h2>joining responses</h2>
-        </section>
-        <section data-id="5d36d9cc1c2facedecefc3473b45d55f">
-            <h2>parallel requests</h2>
-        </section>
-        <section data-id="7bfb202227ad7cf9f2ac6df8abb1bf3f">
-            <h2>benchmark env</h2>
-        </section>
-        <section data-id="ff195baadba52f1cc1b8b8e8e479fa9d">
-            <h2>video</h2>
-        </section>
+    <section>
+        <h2>throughput and latency</h2>
     </section>
-    <section data-id="767a2b4965d9d03bfb732d98a7d5a250">
-        <h2>q&amp;a</h2>
+    <section>
+        <h2>updating app takes long</h2>
     </section>
+    <section>
+        <h2>lang and tools more limited</h2>
+    </section>
+</section>
+<section>
+    <section>
+        <h2>Patterns (lessons learnt)</h2>
+    </section>
+    <section>
+        <h2>what apps do we discuss?</h2>
+
+        <div>
+            <br>
+        </div>
+        <div>Homegrown!</div>
+        <div>Public mobile APIs(?)</div>
+    </section>
+</section>
+<section>
+    <section>
+        <h2>http methods</h2>
+
+        <div>How do you update a small information?</div>
+        <div>POST with the whole object</div>
+        <div>PATCH coming right up</div>
+        <div>
+            <br>
+        </div>
+    </section>
+    <section>
+        <h2>using actions in paths</h2>
+
+        <div>
+            <br>
+        </div>
+        <div>POST /user/activate</div>
+        <div>
+            <br>
+        </div>
+        <div>
+            <br>
+        </div>
+        <div>
+            <br>
+        </div>
+    </section>
+    <section>
+        <h2>thinner &nbsp;client, more control</h2>
+
+        <div>
+            <br>
+        </div>
+    </section>
+</section>
+<section>
+    <section>
+        <h2>hateoas</h2>
+
+        <div>... and linking between resources</div>
+        <div>
+            <br>
+        </div>
+    </section>
+    <section>
+        <h2>multiple calls from mobile</h2>
+
+        <div>
+            <br>
+        </div>
+        <div>
+            <br>
+        </div>
+    </section>
+    <section>
+        <h2>embedding subresources</h2>
+
+        <div>
+            <br>
+        </div>
+    </section>
+    <section>
+        <h2>Paging</h2>
+    </section>
+</section>
+<section>
+    <section>
+        <h2>http cache</h2>
+
+        <div>
+            <br>
+        </div>
+    </section>
+    <section>
+        <h2>compatibility across clients</h2>
+    </section>
+</section>
+<section>
+    <section>
+        <h2>minimizing data size</h2>
+    </section>
+    <section>
+        <h2>compression</h2>
+    </section>
+    <section>
+        <h2>fields subsets</h2>
+    </section>
+</section>
+<section>
+    <section>
+        <h2>versioning</h2>
+
+        <div>
+            <br>
+        </div>
+    </section>
+    <section>
+        <h2>3 schools of versioning</h2>
+    </section>
+    <section>
+        <h2>path parameter</h2>
+    </section>
+    <section>
+        <h2>media type</h2>
+    </section>
+    <section>
+        <h2>subdomain</h2>
+    </section>
+</section>
+<section>
+    <section>
+        <h2>documenting services</h2>
+
+        <div>and swagger</div>
+        <div>
+            <br>
+        </div>
+    </section>
+    <section>
+        <h2>json schema</h2>
+    </section>
+</section>
+<section>
+    <section>
+        <h2>case study - utest app</h2>
+    </section>
+    <section>
+        <h2>building middleware</h2>
+    </section>
+    <section>
+        <h2>joining responses</h2>
+    </section>
+    <section>
+        <h2>parallel requests</h2>
+    </section>
+    <section>
+        <h2>benchmark env</h2>
+    </section>
+    <section>
+        <h2>video</h2>
+    </section>
+</section>
+<section>
+    <h2>q&amp;a</h2>
+</section>
 </div>
 
 
-		</div>
+</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
 
-		<script>
+<script>
 
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
-				// Parallax scrolling
-				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-				// parallaxBackgroundSize: '2100px 900px',
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
 
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+            { src: 'lib/js/classList.js', condition: function () {
+                return !document.body.classList;
+            } },
+            { src: 'plugin/markdown/marked.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            } },
+            { src: 'plugin/markdown/markdown.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            } },
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                hljs.initHighlightingOnLoad();
+            } },
+            { src: 'plugin/zoom-js/zoom.js', async: true, condition: function () {
+                return !!document.body.classList;
+            } },
+            { src: 'plugin/notes/notes.js', async: true, condition: function () {
+                return !!document.body.classList;
+            } }
+        ]
+    });
 
-		</script>
+</script>
 
-	</body>
+</body>
 </html>
