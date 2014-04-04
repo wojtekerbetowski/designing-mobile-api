@@ -187,6 +187,21 @@
     </section>
     <section>
         <h2>language and tools are very limited</h2>
+        <div class="fragment">
+            <p>Excercise: What does it take to call simultaneously several URLs and join results?</p>
+        </div>
+    </section>
+    <section>
+        <h1>Groovy</h1>
+        <pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">def result = ""
+
+def threads = (1..3).collect {
+  Thread.start {result += new URL("https://google.com").text}
+}
+
+threads*.join()
+println result
+</code></pre>
     </section>
     <section>
         <h2>Lower processing power</h2>
