@@ -56,68 +56,128 @@
         <h2>agenda</h2>
 
         <div>
-            <br>
-        </div>
-        <div>
-            <br>
+            <ul>
+                <li>Motivation</li>
+                <li>A little bit about REST</li>
+                <li>Welcome to world of limits</li>
+                <li>Design patterns</li>
+            </ul>
         </div>
     </section>
     <section>
         <h2>motivation</h2>
+        <div>
+            <ul>
+                <li>Take a look from a different perspective</li>
+                <li>Provide a better user experience</li>
+            </ul>
+        </div>
     </section>
 </section>
 <section>
     <section>
         <h2>about us</h2>
-
-        <div>
-            <br>
-        </div>
     </section>
     <section>
         <h2>teammates @ polidea</h2>
+        <div>
+            <img src="img/maciej_op.jpg" style="float: left; width: 200px;">
+            <img src="img/wojtek_er.jpg" style="float: right; width: 200px;">
+            <img src="img/team.jpg" class="image" style="width: 500px; ">
+        </div>
     </section>
     <section>
         <h2>experience</h2>
+        <ul>
+            <li class="fragment">Flow - Gradle based mobile build system</li>
+            <li class="fragment">RoboSpock - Android Unit testing framework</li>
+            <li class="fragment">Rooms booking system</li>
+            <li class="fragment">Company contacts apps</li>
+            <li class="fragment">Company approval process</li>
+            <li class="fragment">uTest - in-the-wild testing</li>
+        </ul>
     </section>
 </section>
 <section>
     <section>
         <h2>A word about rest</h2>
 
-        <div>
-            <br>
-        </div>
+        <ul class="fragment">
+            <li>Definitely a buzzword</li>
+            <li>Service design pattern, close to HTTP 1.1</li>
+            <li>Guidelines for services layout</li>
+        </ul>
     </section>
     <section>
         <h2>back to the roots</h2>
+        <br/>
+        <img src="img/rest.png" alt="REST" />
+    </section>
+    <section>
+        <div>
+            <table align="center">
+                <caption><b><a name="tab_5_1">Table 5-1: REST Data Elements</a></b></caption>
+                <tbody><tr bgcolor="#039acc">
+                    <th>Data Element</th>
+                    <th>Modern Web Examples</th>
+                </tr><tr>
+                    <td>resource</td>
+                    <td>the intended conceptual target of a hypertext reference</td>
+                </tr><tr>
+                    <td>resource identifier</td>
+                    <td>URL, URN</td>
+                </tr><tr>
+                    <td>representation</td>
+                    <td>HTML document, JPEG image</td>
+                </tr><tr>
+                    <td>representation metadata</td>
+                    <td>media type, last-modified time</td>
+                </tr><tr>
+                    <td>resource metadata</td>
+                    <td>source link, alternates, vary</td>
+                </tr><tr>
+                    <td>control data</td>
+                    <td>if-modified-since, cache-control</td>
+                </tr>
+                </tbody></table>
+        </div>
     </section>
     <section>
         <h2>the "re" in rest</h2>
-
-        <div>A few words about representation (XML, JSON), not action</div>
+        <p>stands for representational</p>
     </section>
     <section>
         <h2>updating resources</h2>
-
-        <div>PUT, POST, PATCH</div>
-        <div>
-            <br>
-        </div>
+        <br/>
+        <ul>
+            <li>Creation: POST</li>
+            <li>Modifications: PUT, PATCH (RFC5789)</li>
+        </ul>
     </section>
 </section>
 <section>
     <section>
-        <h2>why isn't it perfect for mobile</h2>
+        <h2>why isn't it perfect for mobile?</h2>
+    </section>
+    <section>
+        <h2>Meet new limitations</h2>
     </section>
     <section>
         <h2>throughput and latency</h2>
     </section>
     <section>
-        <h2>updating app takes long</h2>
+        <h2>Connection speed market share</h2>
+        <p>[inster a chart here]</p>
     </section>
     <section>
-        <h2>lang and tools more limited</h2>
+        <h2>updating app takes long</h2>
+        <p>[avarage update intallation time?]</p>
+    </section>
+    <section>
+        <h2>language and tools are very limited</h2>
+    </section>
+    <section>
+        <h2>Lower processing power</h2>
     </section>
 </section>
 <section>
@@ -163,7 +223,7 @@
         </div>
     </section>
     <section>
-        <h2>thinner &nbsp;client, more control</h2>
+        <h2>thinner client, more control</h2>
 
         <div>
             <br>
@@ -183,7 +243,8 @@
         <h2>multiple calls from mobile</h2>
 
         <div>
-            <br>
+            same service?
+            different services?
         </div>
         <div>
             <br>
