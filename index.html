@@ -253,7 +253,11 @@ println result
         <h2>thinner client, more control</h2>
 
         <div>
-            <br>
+            <ul>
+                <li>analytics</li>
+                <li>bug fixing</li>
+                <li>optimizations</li>
+            </ul>
         </div>
     </section>
 </section>
@@ -267,19 +271,52 @@ println result
         </div>
     </section>
     <section>
+        <h2>hateoas example</h2>
+
+        <div>
+            <pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">{
+"users" : [
+  {
+    "id": 1234,
+    "name": "Bob",
+    "roles": [
+      {"href": "http://api.example.com/roles/1"},
+      {"href": "http://api.example.com/roles/2"},
+      {"href": "http://api.example.com/roles/3"}
+    ],
+  }
+]
+
+}</code></pre>
+        </div>
+    </section>
+    <section>
+        <h2>embedded relates</h2>
+
+        <div>
+            <pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">{
+"users" : [
+  {
+    "id": 1234,
+    "name": "Bob",
+    "roles": [
+      {"name": "ADMIN"},
+      {"name": "OPERATOR"},
+      {"name": "USER"}
+    ],
+  }
+]
+
+}</code></pre>
+        </div>
+    </section>
+    <section>
         <h2>multiple calls from mobile</h2>
 
         <div>
             same service?
             different services?
         </div>
-        <div>
-            <br>
-        </div>
-    </section>
-    <section>
-        <h2>embedding subresources</h2>
-
         <div>
             <br>
         </div>
