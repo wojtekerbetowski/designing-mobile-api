@@ -279,7 +279,7 @@ println result
         <pre>
             <code>
                 GET /account/12345 HTTP/1.1 HTTP/1.1 200 OK
-                
+
                 <account>
                     <account_number>12345</account_number>
                     <balance currency="usd">100.00</balance>
@@ -359,6 +359,7 @@ println result
     </section>
     <section>
         <h2>compatibility across clients</h2>
+        ???
     </section>
 </section>
 <section>
@@ -366,10 +367,49 @@ println result
         <h2>minimizing data size</h2>
     </section>
     <section>
-        <h2>compression</h2>
+        <h2>Data format</h2>
+        <br/>
+        <table class="reveal">
+            <tr>
+                <td style="text-align: center">XML</td>
+                <td style="text-align: center">JSON</td>
+            </tr>
+            <tr>
+                <td style="text-align: center">295,29 kB</td>
+                <td style="text-align: center">172,04 kB (58,26%)</td>
+            </tr>
+        </table>
     </section>
     <section>
         <h2>fields subsets</h2>
+        <br/>
+        <table class="reveal">
+            <tr>
+                <td style="text-align: center">JSON</td>
+                <td style="text-align: center">JSON subset</td>
+            </tr>
+            <tr>
+                <td style="text-align: center">172,04 kB</td>
+                <td style="text-align: center">0,93 kB (0,55%)</td>
+            </tr>
+        </table>
+    </section>
+    <section>
+        <h2>compression</h2>
+        <br/>
+        <table class="reveal">
+            <tr>
+                <td style="text-align: center">JSON subset</td>
+                <td style="text-align: center">JSON subset + GZIP</td>
+            </tr>
+            <tr>
+                <td style="text-align: center">0,93 kB</td>
+                <td style="text-align: center">0,61 kB (65,59%)</td>
+            </tr>
+        </table>
+        <br/>
+        <br/>
+        <p>Overall: <b>0,21%</b> of initial size!</p>
     </section>
 </section>
 <section>
