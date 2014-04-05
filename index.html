@@ -248,7 +248,7 @@ println result
         <div>
             <br>
         </div>
-        <div>POST /user/activate</div>
+        <div>POST /user/3145/activate</div>
         <div>
             <br>
         </div>
@@ -276,6 +276,20 @@ println result
         <h2>hateoas</h2>
 
         <div>... and linking between resources</div>
+        <pre>
+            <code>
+                GET /account/12345 HTTP/1.1 HTTP/1.1 200 OK
+                
+                <account>
+                    <account_number>12345</account_number>
+                    <balance currency="usd">100.00</balance>
+                    <link rel="deposit" href="/account/12345/deposit" />
+                    <link rel="withdraw" href="/account/12345/withdraw" />
+                    <link rel="transfer" href="/account/12345/transfer" />
+                    <link rel="close" href="/account/12345/close" />
+                </account>
+            </code>
+        </pre>
         <div>
             <br>
         </div>
