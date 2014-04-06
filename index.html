@@ -192,6 +192,16 @@
         </div>
     </section>
     <section>
+        <h2>JAVA</h2>
+        <ul>
+            <li>Create an Executor instance</li>
+            <li>Implement Runnable interface for every task</li>
+            <li>Execute all tasks (synchronization?)</li>
+            <li>Render view</li>
+            <li>Exception handling? Tiresome..</li>
+        </ul>
+    </section>
+    <section>
         <h1>Groovy</h1>
         <pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">def result = ""
 
@@ -202,16 +212,6 @@ def threads = (1..3).collect {
 threads*.join()
 println result
 </code></pre>
-    </section>
-    <section>
-        <h2>JAVA</h2>
-        <ul>
-            <li>Create an Executor instance</li>
-            <li>Implement Runnable interface for every task</li>
-            <li>Execute all tasks (synchronization?)</li>
-            <li>Render view</li>
-            <li>Exception handling? Tiresome..</li>
-        </ul>
     </section>
     <section>
         <h2>Lower processing power</h2>
@@ -277,28 +277,7 @@ println result
 
         <div>... and linking between resources</div>
         <pre>
-            <code>
-                GET /account/12345 HTTP/1.1 HTTP/1.1 200 OK
-
-                <account>
-                    <account_number>12345</account_number>
-                    <balance currency="usd">100.00</balance>
-                    <link rel="deposit" href="/account/12345/deposit" />
-                    <link rel="withdraw" href="/account/12345/withdraw" />
-                    <link rel="transfer" href="/account/12345/transfer" />
-                    <link rel="close" href="/account/12345/close" />
-                </account>
-            </code>
-        </pre>
-        <div>
-            <br>
-        </div>
-    </section>
-    <section>
-        <h2>hateoas example</h2>
-
-        <div>
-            <pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">{
+            <code>{
 "users" : [
   {
     "id": 1234,
@@ -311,7 +290,10 @@ println result
   }
 ]
 
-}</code></pre>
+}</code>
+        </pre>
+        <div>
+            <br>
         </div>
     </section>
     <section>
@@ -356,15 +338,80 @@ println result
 <section>
     <section>
         <h2>http cache</h2>
-    </section>
-    <section>
-        <h2>compatibility across clients</h2>
-        ???
+        <ul>
+            <li class="fragment">iOS (AFNetworking)</li>
+            <li class="fragment">Android (Retrofit)</li>
+        </ul>
     </section>
 </section>
 <section>
     <section>
         <h2>minimizing data size</h2>
+    </section>
+    <section>
+        <h2>example</h2>
+        <pre><code>{
+    "appKey": null,
+    "applicationFeatures": [
+        "TM_HTML_COMPLETE",
+        "ACCESS_SPUTNIK_IM_APPLICATION",
+        "APPHANCE_INTEGRATION",
+        "TM_TOP_TESTERS",
+        "VOLTRON_DASHBOARD"
+    ],
+    "authDate": 1396788850862,
+    "chatUUID": "1234567890",
+    "code": "4c4712a4141d261ec0ca8f90379506854c4712a4141d261ec0ca8f90379506854c4712a4141d261ec0ca8f90379506854c4712a4141d261ec0ca8f9037950685",
+    "grantedAuthorities": [
+        "PERMISSION_BUG_PAYOUT_VIEW",
+        "PERMISSION_PROJECT_VIEW",
+        "PERMISSION_TESTER_PAYMENTS_VIEW",
+        "PERMISSION_USER_ACCOUNT_VIEW",
+        "PERMISSION_REVIEW_PAYOUT_VIEW",
+        "PERMISSION_TEST_CYCLE_VIEW",
+        "PERMISSION_USER_ACCOUNT_CLOSE",
+        "PERMISSION_USER_ACCOUNT_EDIT",
+        "PERMISSION_BUGS_AND_TEST_CASES_VIEW",
+        "PERMISSION_BUG_EDIT",
+        "PERMISSION_TEST_CYCLE_REVIEW_READ",
+        "PERMISSION_PRODUCT_VIEW",
+        "PERMISSION_BUG_CLIPBOARD_COPY",
+        "PERMISSION_REQUESTED_INFO_SEND",
+        "PERMISSION_TEST_RUN_TEST_CASE_SELF_ASSIGN",
+        "PERMISSION_BUG_DISCARD",
+        "PERMISSION_BUG_DISPUTE",
+        "PERMISSION_USABILITY_SURVEY_RESPONSE_VIEW",
+        "PERMISSION_USABILITY_SURVEY_RESPONSE_DISCARD",
+        "PERMISSION_USABILITY_SURVEY_RESPONSE_EDIT",
+        "PERMISSION_USABILITY_SURVEY_RESPONSE_CREATE",
+        "PERMISSION_TEST_CYCLE_COVERAGE_VIEW",
+        "PERMISSION_TEST_RUN_ASSIGNMENT_EXECUTE",
+        "PERMISSION_TEST_CYCLE_PRODUCT_DESCRIPTION_VIEW",
+        "PERMISSION_TEST_CYCLE_OBJECTIVES_VIEW",
+        "PERMISSION_BUG_CREATE",
+        "PERMISSION_TEST_CASE_TAB_VIEW",
+        "PERMISSION_TEST_CYCLE_REVIEW_CREATE",
+        "PERMISSION_TEST_RUN_RESULT_ATTACHMENT_UPLOAD",
+        "PERMISSION_USABILITY_SURVEY_RESPONSE_PAYOUT_EDIT",
+        "PERMISSION_BUG_FIX_WORTHINESS_PRICE_VIEW",
+        "PERMISSION_TEST_CYCLE_REVIEW_EDIT",
+        "PERMISSION_USABILITY_SURVEY_RESPONSE_PAYOUT_VIEW",
+        "PERMISSION_TEST_CYCLE_REVIEW_DISCARD",
+        "PERMISSION_TEST_CASE_PAYOUT_VIEW",
+        "PERMISSION_TEST_CYCLE_REVIEW_MESSAGE_CREATE",
+        "DATA_GRID_TESTER_VIEW",
+        "PERMISSION_USABILITY_SURVEY_PAYOUT_VIEW"
+    ],
+    "impsersonatedUserId": null,
+    "ipAddress": "127.0.0.1",
+    "roles": [
+        3
+    ],
+    "token": "43v4j3gv4jh3n23z896b2c32xbfekszb3",
+    "userId": 1234,
+    "userName": "frank@sinatra.com"
+}
+</code></pre>
     </section>
     <section>
         <h2>Data format</h2>
@@ -375,8 +422,8 @@ println result
                 <td style="text-align: center">JSON</td>
             </tr>
             <tr>
-                <td style="text-align: center">295,29 kB</td>
-                <td style="text-align: center">172,04 kB (58,26%)</td>
+                <td style="text-align: center">5234 bytes</td>
+                <td style="text-align: center">1934 bytes (37%)</td>
             </tr>
         </table>
     </section>
@@ -389,8 +436,8 @@ println result
                 <td style="text-align: center">JSON subset</td>
             </tr>
             <tr>
-                <td style="text-align: center">172,04 kB</td>
-                <td style="text-align: center">0,93 kB (0,55%)</td>
+                <td style="text-align: center">1934 bytes</td>
+                <td style="text-align: center">88 bytes (4.5%)</td>
             </tr>
         </table>
     </section>
@@ -403,13 +450,16 @@ println result
                 <td style="text-align: center">JSON subset + GZIP</td>
             </tr>
             <tr>
-                <td style="text-align: center">0,93 kB</td>
-                <td style="text-align: center">0,61 kB (65,59%)</td>
+                <td style="text-align: center">88 bytes</td>
+                <td style="text-align: center">101 bytes (115%)</td>
             </tr>
         </table>
         <br/>
         <br/>
-        <p>Overall: <b>0,21%</b> of initial size!</p>
+        <p>Overall: <b>1,9%</b> of initial size!</p>
+        <aside class="notes">
+            Average 96% less data in uTest
+        </aside>
     </section>
 </section>
 <section>
@@ -459,11 +509,9 @@ println result
         <p>Reduced:</p>
         <ul>
             <li>36 to 20 endpoints</li>
-            <li>86 to 20 calls</li>
+            <li>86 to 20 calls (visiting all screens once)</li>
+            <li>parallel requests</li>
         </ul>
-    </section>
-    <section>
-        <h2>parallel requests</h2>
     </section>
     <section>
         <h2>video</h2>
