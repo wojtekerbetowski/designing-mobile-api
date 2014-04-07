@@ -51,6 +51,9 @@
         <div>
             <br>
         </div>
+        <aside class="notes">
+            <span style="color: red;">Maciek</span>
+        </aside>
     </section>
     <section>
         <h2>agenda</h2>
@@ -63,6 +66,9 @@
                 <li>Design patterns</li>
             </ul>
         </div>
+        <aside class="notes">
+            <span style="color: blue;">Wojtek</span>
+        </aside>
     </section>
     <section>
         <h2>motivation</h2>
@@ -72,11 +78,17 @@
                 <li>Provide a better user experience</li>
             </ul>
         </div>
+        <aside class="notes">
+            <span style="color: blue;">Wojtek</span>
+        </aside>
     </section>
 </section>
 <section>
     <section>
         <h2>about us</h2>
+        <aside class="notes">
+            <span style="color: red;">Maciek</span>
+        </aside>
     </section>
     <section>
         <h2>teammates @ polidea</h2>
@@ -85,6 +97,9 @@
             <img src="img/wojtek_er.jpg" style="float: right; width: 200px;">
             <img src="img/team.jpg" class="image" style="width: 500px; ">
         </div>
+        <aside class="notes">
+            <span style="color: red;">Maciek</span>
+        </aside>
     </section>
     <section>
         <h2>experience</h2>
@@ -96,6 +111,9 @@
             <li class="fragment">Company approval process</li>
             <li class="fragment">uTest - in-the-wild testing</li>
         </ul>
+        <aside class="notes">
+            <span style="color: blue;">Wojtek</span>
+        </aside>
     </section>
 </section>
 <section>
@@ -107,11 +125,17 @@
             <li>Service design pattern, close to HTTP 1.1</li>
             <li>Guidelines for services layout</li>
         </ul>
+        <aside class="notes">
+            <span style="color: blue;">Wojtek</span>
+        </aside>
     </section>
     <section>
         <h2>back to the roots</h2>
         <br/>
         <img src="img/rest.png" alt="REST" />
+        <aside class="notes">
+            <span style="color: blue;">Wojtek</span>
+        </aside>
     </section>
     <section>
         <div>
@@ -141,10 +165,16 @@
                 </tr>
                 </tbody></table>
         </div>
+        <aside class="notes">
+            <span style="color: blue;">Wojtek</span>
+        </aside>
     </section>
     <section>
         <h2>the "re" in rest</h2>
         <p>stands for representational</p>
+        <aside class="notes">
+            <span style="color: blue;">Wojtek</span>
+        </aside>
     </section>
     <section>
         <h2>updating resources</h2>
@@ -153,17 +183,29 @@
             <li>Creation: POST</li>
             <li>Modifications: PUT, PATCH (RFC5789)</li>
         </ul>
+        <aside class="notes">
+            <span style="color: blue;">Wojtek</span>
+        </aside>
     </section>
 </section>
 <section>
     <section>
         <h2>why isn't it perfect for mobile?</h2>
+        <aside class="notes">
+            <span style="color: blue;">Wojtek</span>
+        </aside>
     </section>
     <section>
         <h2>Meet new limitations</h2>
+        <aside class="notes">
+            <span style="color: red;">Maciek</span>
+        </aside>
     </section>
     <section>
         <h2>throughput and latency</h2>
+        <aside class="notes">
+            <span style="color: red;">Maciek</span>
+        </aside>
     </section>
     <section>
         <h2>Connection speed market share</h2>
@@ -171,6 +213,9 @@
             <img src="img/cisco_1.jpg" style="float: left; width: 450px; height: 300px;"/>
             <img src="img/cisco_2.jpg" style="float: right; width: 450px; height: 300px;"/>
         </div>
+        <aside class="notes">
+            <span style="color: red;">Maciek</span>
+        </aside>
     </section>
     <section>
         <h2>updating app takes long</h2>
@@ -184,12 +229,18 @@
         <br/>
         <br/>
         <p>How often user updates app?</p>
+        <aside class="notes">
+            <span style="color: red;">Maciek</span>
+        </aside>
     </section>
     <section>
         <h2>language and tools are very limited</h2>
         <div class="fragment">
             <p>Exercise: What does it take to call simultaneously several URLs and join results?</p>
         </div>
+        <aside class="notes">
+            <span style="color: red;">Maciek</span>
+        </aside>
     </section>
     <section>
         <h2>JAVA</h2>
@@ -200,6 +251,9 @@
             <li>Render view</li>
             <li>Exception handling? Tiresome..</li>
         </ul>
+        <aside class="notes">
+            <span style="color: red;">Maciek</span>
+        </aside>
     </section>
     <section>
         <h1>Groovy</h1>
@@ -212,23 +266,35 @@ def threads = (1..3).collect {
 threads*.join()
 println result
 </code></pre>
+        <aside class="notes">
+            <span style="color: red;">Maciek</span>
+        </aside>
     </section>
     <section>
         <h2>Lower processing power</h2>
+        <aside class="notes">
+            <span style="color: red;">Maciek</span>
+        </aside>
     </section>
 </section>
 <section>
     <section>
         <h2>Patterns (lessons learnt)</h2>
+        <aside class="notes">
+            <span style="color: blue;">Wojtek</span>
+        </aside>
     </section>
     <section>
-        <h2>what apps do we discuss?</h2>
+        <h2>what types of apps do we discuss?</h2>
 
         <div>
             <br>
         </div>
         <div>Homegrown!</div>
         <div>Public mobile APIs(?)</div>
+        <aside class="notes">
+            <span style="color: blue;">Wojtek</span>
+        </aside>
     </section>
 </section>
 <section>
@@ -241,6 +307,10 @@ println result
         <div>
             <br>
         </div>
+        <aside class="notes">
+            <span style="color: blue;">Wojtek</span>
+            <span style="color: red;">Maciek</span>
+        </aside>
     </section>
     <section>
         <h2>using actions in paths</h2>
@@ -258,6 +328,10 @@ println result
         <div>
             <br>
         </div>
+        <aside class="notes">
+            <span style="color: blue;">Wojtek</span>
+            <span style="color: red;">Maciek</span>
+        </aside>
     </section>
     <section>
         <h2>thinner client, more control</h2>
@@ -269,6 +343,9 @@ println result
                 <li>optimizations</li>
             </ul>
         </div>
+        <aside class="notes">
+            <span style="color: red;">Maciek</span>
+        </aside>
     </section>
 </section>
 <section>
@@ -295,6 +372,10 @@ println result
         <div>
             <br>
         </div>
+        <aside class="notes">
+            <span style="color: blue;">Wojtek</span>
+            <span style="color: red;">Maciek</span>
+        </aside>
     </section>
     <section>
         <h2>embedded relates</h2>
@@ -315,6 +396,9 @@ println result
 
 }</code></pre>
         </div>
+        <aside class="notes">
+            <span style="color: red;">Maciek</span>
+        </aside>
     </section>
     <section>
         <h2>multiple calls from mobile</h2>
@@ -326,6 +410,9 @@ println result
         <div>
             <br>
         </div>
+        <aside class="notes">
+            <span style="color: red;">Maciek</span>
+        </aside>
     </section>
     <section>
         <h2>Paging</h2>
@@ -333,20 +420,31 @@ println result
             <li>Should be big enough not to require to many connections</li>
             <li>Should let the client minimize the risk of loosing data</li>
         </ul>
+        <aside class="notes">
+            <span style="color: blue;">Wojtek</span>
+            <span style="color: red;">Maciek</span>
+        </aside>
     </section>
 </section>
 <section>
     <section>
         <h2>http cache</h2>
-        <ul>
-            <li class="fragment">iOS (AFNetworking)</li>
-            <li class="fragment">Android (Retrofit)</li>
+        <ul class="fragment">
+            <li>iOS (AfNetworking + NSURLCache)</li>
+            <li>Android (Retrofit + OkHttp + HttpResponseCache)</li>
         </ul>
+        <aside class="notes">
+            <span style="color: blue;">Wojtek</span>
+            <span style="color: red;">Maciek</span>
+        </aside>
     </section>
 </section>
 <section>
     <section>
         <h2>minimizing data size</h2>
+        <aside class="notes">
+            <span style="color: red;">Maciek</span>
+        </aside>
     </section>
     <section>
         <h2>example</h2>
@@ -412,6 +510,9 @@ println result
     "userName": "frank@sinatra.com"
 }
 </code></pre>
+        <aside class="notes">
+            <span style="color: blue;">Wojtek</span>
+        </aside>
     </section>
     <section>
         <h2>Data format</h2>
@@ -426,6 +527,9 @@ println result
                 <td style="text-align: center">1934 bytes (37%)</td>
             </tr>
         </table>
+        <aside class="notes">
+            <span style="color: red;">Maciek</span>
+        </aside>
     </section>
     <section>
         <h2>fields subsets</h2>
@@ -440,6 +544,9 @@ println result
                 <td style="text-align: center">88 bytes (4.5%)</td>
             </tr>
         </table>
+        <aside class="notes">
+            <span style="color: red;">Maciek</span>
+        </aside>
     </section>
     <section>
         <h2>compression</h2>
@@ -459,6 +566,7 @@ println result
         <p>Overall: <b>1,9%</b> of initial size!</p>
         <aside class="notes">
             Average 96% less data in uTest
+            <span style="color: red;">Maciek</span>
         </aside>
     </section>
 </section>
@@ -469,24 +577,40 @@ println result
         <div>
             <br>
         </div>
+        <aside class="notes">
+            <span style="color: blue;">Wojtek</span>
+        </aside>
     </section>
     <section>
         <h2>3 schools of versioning</h2>
+        <aside class="notes">
+            <span style="color: blue;">Wojtek</span>
+        </aside>
     </section>
     <section>
         <h2>path parameter</h2>
         <br/>
         <p>http://api.example.com/v1</p>
+        <aside class="notes">
+            <span style="color: blue;">Wojtek</span>
+        </aside>
     </section>
     <section>
         <h2>media type (or custom header)</h2>
         <br/>
         <p>application/vnd.example.com.v1+json</p>
+        <aside class="notes">
+            <span style="color: blue;">Wojtek</span>
+        </aside>
     </section>
     <section>
         <h2>subdomain</h2>
         <br/>
         <p>http://v1.api.example.com</p>
+        <aside class="notes">
+            <span style="color: blue;">Wojtek</span>
+            <span style="color: red;">Maciek</span>
+        </aside>
     </section>
 </section>
 <section>
@@ -497,11 +621,18 @@ println result
         <div>
             <br>
         </div>
+        <aside class="notes">
+            <span style="color: red;">Maciek</span>
+        </aside>
     </section>
 </section>
 <section>
     <section>
         <h2>case study - utest app</h2>
+        <aside class="notes">
+            <span style="color: blue;">Wojtek</span>
+            <span style="color: red;">Maciek</span>
+        </aside>
     </section>
     <section>
         <h2>joining responses</h2>
@@ -512,14 +643,26 @@ println result
             <li>86 to 20 calls (visiting all screens once)</li>
             <li>parallel requests</li>
         </ul>
+        <aside class="notes">
+            <span style="color: blue;">Wojtek</span>
+            <span style="color: red;">Maciek</span>
+        </aside>
     </section>
     <section>
         <h2>video</h2>
         <video controls="controls" width="800" height="600" name="Video Name" src="utest.mov"></video>
+        <aside class="notes">
+            <span style="color: blue;">Wojtek</span>
+            <span style="color: red;">Maciek</span>
+        </aside>
     </section>
     <section>
         <h2>middleware</h2>
         <img src="facade.png">
+        <aside class="notes">
+            <span style="color: blue;">Wojtek</span>
+            <span style="color: red;">Maciek</span>
+        </aside>
     </section>
 </section>
 <section>
